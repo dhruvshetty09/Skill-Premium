@@ -1,0 +1,15 @@
+requests
+beautifulsoup4
+lxml
+pandas
+rapidfuzz
+SQLAlchemy
+psycopg2-binary
+statsmodels
+scipy
+python-dotenv
+pyarrow
+matplotlib
+seaborn
+openpyxl
+jupyter
