@@ -97,15 +97,14 @@ def parse_experience(raw):
     if not numbers:
         return (None, None)
 
-    min_years = int(numbers[0])
-
     if "+" in text:
-        return (min_years, None)
+        return (int(numbers[0]), None)
 
     if len(numbers) >= 2:
-        return (min_years, int(numbers[1]))
+        a, b = int(numbers[0]), int(numbers[1])
+        return (min(a, b), max(a, b))
 
-    return (min_years, None)
+    return (int(numbers[0]), None)
 
 
 if __name__ == "__main__":
